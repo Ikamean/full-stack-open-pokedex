@@ -14,7 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.11.10 # This is the action
-      - name: commit messages
         env:
           COMMIT_MESSAGES: ${{ toJson(github.event.commits.*.message) }}
         if: ${{ github.event_name == 'push' && !contains($COMMIT_MESSAGES, 'skip') }}
