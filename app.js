@@ -18,4 +18,4 @@ app.get('/version', (req, res) => {
 })
 
 // eslint-disable-next-line no-console
-app.listen(PORT, () => console.log('server started on port 5000'))
+app.listen(PORT, () => console.log('server started on port 5000, Workflows is Great'))
